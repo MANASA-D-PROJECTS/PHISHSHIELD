@@ -110,31 +110,17 @@ Final score range:
 
 ### Launch Screen
 
-Launch Screen.png
-
 ### URL Scanner
-
-URL Scanner.png
 
 ### Threat Indicators & Safety Score of URL
 
-Threat Indicators & Safety Score of URL.png
-
 ### Safe Scan History
-
-Safe Scan History.png
 
 ### Suspicious Scan History
 
-Suspicious Scan History.png
-
 ### High Risk URL's Scan History
 
-High Risk URL's Scan History.png
-
 ### PhishShield Dashboard
-
-PhishShield Dashboard.png
 
 ---
 
