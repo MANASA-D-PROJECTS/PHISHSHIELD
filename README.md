@@ -109,18 +109,25 @@ Final score range:
 ## Screenshots
 
 ### Launch Screen
+https://github.com/MANASA-D-PROJECTS/PHISHSHIELD/blob/main/Launch%20Screen.png
 
 ### URL Scanner
+https://github.com/MANASA-D-PROJECTS/PHISHSHIELD/blob/main/URL%20Scanner.png
 
 ### Threat Indicators & Safety Score of URL
+https://github.com/MANASA-D-PROJECTS/PHISHSHIELD/blob/main/Threat%20Indicators%20%26%20Safety%20Score%20of%20URL.png
 
 ### Safe Scan History
+https://github.com/MANASA-D-PROJECTS/PHISHSHIELD/blob/main/Safe%20Scan%20History.png
 
 ### Suspicious Scan History
+https://github.com/MANASA-D-PROJECTS/PHISHSHIELD/blob/main/Suspicious%20Scan%20History.png
 
 ### High Risk URL's Scan History
+https://github.com/MANASA-D-PROJECTS/PHISHSHIELD/blob/main/High%20Risk%20URL's%20Scan%20History.png
 
 ### PhishShield Dashboard
+https://github.com/MANASA-D-PROJECTS/PHISHSHIELD/blob/main/PhishShield%20Dashboard.png
 
 ---
 
