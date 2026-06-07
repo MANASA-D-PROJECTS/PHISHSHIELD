@@ -20,4 +20,3 @@ PhishShield analyzes URLs using multiple threat indicators and generates a risk 
 - Phishing Keyword Analysis
 - URL Structure Analysis
 - Security Recommendations
-- Threat Intelligence Integration (Planned)
