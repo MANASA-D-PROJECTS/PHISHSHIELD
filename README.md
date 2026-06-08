@@ -1,108 +1,121 @@
-# PhishShield
+# PhishShield – Phishing URL Risk Scoring Tool
 
 ## Overview
 
-PhishShield is a phishing URL detection platform designed to help users identify potentially malicious links before visiting them.
+PhishShield is a rule-based phishing URL risk scoring tool designed to help users evaluate the potential risk level of a URL before visiting it.
 
-The system analyzes URLs against multiple phishing indicators and generates a risk score, helping users make safer browsing decisions.
+The system analyzes URLs using predefined security indicators and assigns a risk score. Based on this score, URLs are classified as Safe, Suspicious, or High Risk, helping users make informed browsing decisions.
 
 ---
 
 ## Problem Statement
 
-Phishing attacks remain one of the most common cyber threats.
+Phishing is a common cybersecurity threat where attackers use deceptive URLs to trick users into revealing sensitive information or accessing malicious websites.
 
-Users often receive links through:
+These links are commonly distributed through:
 
-* Email
-* SMS
-* Social media
-* Messaging applications
+- Email  
+- SMS  
+- Social media platforms  
+- Messaging applications  
 
-Many malicious URLs imitate trusted brands and trick users into disclosing sensitive information.
-
-PhishShield provides a simple mechanism to evaluate URLs and identify suspicious characteristics before interaction.
+PhishShield helps users assess URLs by analyzing known phishing indicators using a rule-based approach.
 
 ---
 
 ## Features
 
-### URL Risk Analysis
+### URL Risk Scoring
 
-Analyze any URL and calculate a threat score.
+- Accepts user input URL
+- Evaluates risk using rule-based logic
+- Generates a numerical risk score
+
+---
 
 ### Threat Detection Engine
 
-Detects indicators including:
+Detects common phishing indicators such as:
 
-* Typosquatting
-* Blacklisted domains
-* Phishing keywords
-* URL shorteners
-* IP-based URLs
-* Suspicious TLDs
-* Missing HTTPS
-* Excessive subdomains
-* Redirect patterns
-* Encoded characters
+- Typosquatting patterns  
+- Blacklisted domains (if configured)  
+- Phishing-related keywords  
+- URL shorteners  
+- IP-based URLs  
+- Suspicious or uncommon TLDs  
+- Missing HTTPS protocol  
+- Excessive subdomains  
+- Redirect patterns  
+- Encoded or obfuscated characters  
+
+---
 
 ### Risk Classification
 
-URLs are categorized as:
+URLs are categorized into:
 
-* Safe
-* Suspicious
-* High Risk
+- Safe  
+- Suspicious  
+- High Risk  
+
+---
 
 ### Scan History
 
-Maintains a searchable history of previous scans.
+- Stores previously scanned URLs  
+- Allows users to review past evaluations  
+
+---
 
 ### Security Dashboard
 
-Provides analytics including:
+Provides summary analytics including:
 
-* Total URLs scanned
-* Safe URLs
-* Suspicious URLs
-* High-risk URLs
-* Threat distribution
-* Threat frequency trends
+- Total URLs scanned  
+- Safe URLs count  
+- Suspicious URLs count  
+- High-risk URLs count  
+- Basic threat distribution overview  
 
 ---
 
 ## Risk Scoring Methodology
 
-Each threat indicator contributes to an overall risk score.
+Each phishing indicator contributes a weighted score based on severity. The final score is calculated by summing all detected indicators.
 
-Example scoring:
+### Risk Indicator Table
 
-| Indicator           | Severity |
-| ------------------- | -------- |
-| Typosquatting       | Critical |
-| Missing HTTPS       | High     |
-| Blacklisted Domain  | Critical |
-| Suspicious Keywords | Medium   |
-| IP Address URL      | High     |
-| URL Shortener       | Medium   |
+| Indicator            | Severity  | Score Impact |
+|---------------------|----------|--------------|
+| Typosquatting       | Critical | 25           |
+| Blacklisted Domain  | Critical | 25           |
+| Missing HTTPS       | High     | 20           |
+| IP Address URL      | High     | 20           |
+| Suspicious Keywords | Medium   | 10           |
+| URL Shortener       | Medium   | 10           |
+| Suspicious TLD      | Medium   | 10           |
+| Excess Subdomains   | Medium   | 10           |
+| Redirect Pattern    | Low      | 5            |
+| Encoded Characters  | Low      | 5            |
 
-Final score range:
+### Score Classification
 
-* 0–25 → Safe
-* 26–60 → Suspicious
-* 61–100 → High Risk
+- 0 to 25 → Safe  
+- 26 to 60 → Suspicious  
+- 61 to 100 → High Risk  
 
 ---
 
 ## System Workflow
 
-1. User submits URL.
-2. URL components are parsed.
-3. Threat indicators are evaluated.
-4. Risk score is calculated.
-5. Results are displayed.
-6. Scan history is updated.
-7. Dashboard metrics are refreshed.
+- User submits a URL  
+- URL is parsed into components  
+- Security rules are applied  
+- Risk score is calculated  
+- URL is classified  
+- Results are displayed  
+- Scan history is updated  
+- Dashboard statistics are refreshed  
 
 ---
 
@@ -114,7 +127,7 @@ https://github.com/MANASA-D-PROJECTS/PHISHSHIELD/blob/main/Launch%20Screen.png
 ### URL Scanner
 https://github.com/MANASA-D-PROJECTS/PHISHSHIELD/blob/main/URL%20Scanner.png
 
-### Threat Indicators & Safety Score of URL
+### Threat Indicators and Safety Score
 https://github.com/MANASA-D-PROJECTS/PHISHSHIELD/blob/main/Threat%20Indicators%20%26%20Safety%20Score%20of%20URL.png
 
 ### Safe Scan History
@@ -123,10 +136,10 @@ https://github.com/MANASA-D-PROJECTS/PHISHSHIELD/blob/main/Safe%20Scan%20History
 ### Suspicious Scan History
 https://github.com/MANASA-D-PROJECTS/PHISHSHIELD/blob/main/Suspicious%20Scan%20History.png
 
-### High Risk URL's Scan History
+### High Risk Scan History
 https://github.com/MANASA-D-PROJECTS/PHISHSHIELD/blob/main/High%20Risk%20URL's%20Scan%20History.png
 
-### PhishShield Dashboard
+### Dashboard
 https://github.com/MANASA-D-PROJECTS/PHISHSHIELD/blob/main/PhishShield%20Dashboard.png
 
 ---
@@ -135,39 +148,49 @@ https://github.com/MANASA-D-PROJECTS/PHISHSHIELD/blob/main/PhishShield%20Dashboa
 
 ### Frontend
 
-* Figma Make
-* HTML
-* CSS
-* JavaScript
+- HTML  
+- CSS  
+- JavaScript  
+- Figma Make (UI design and prototyping)
 
-### Security Concepts
+---
 
-* URL Analysis
-* Phishing Detection
-* Threat Scoring
-* Security Analytics
+### Core Concepts
 
-### Future Enhancements
+- URL parsing and analysis  
+- Rule-based security system  
+- Phishing detection indicators  
+- Risk scoring logic  
+- Security analytics visualization  
 
-* VirusTotal Integration
-* WHOIS Lookup
-* Domain Age Verification
-* Browser Extension
-* Real-Time Threat Intelligence Feeds
-* Email Phishing Detection
+---
+
+## Limitations
+
+- The system uses rule-based logic and does not include machine learning  
+- No real-time threat intelligence API integration  
+- Blacklist data is static or manually configured (if used)  
+- Detection accuracy depends on predefined rules  
+
+---
+
+## Future Enhancements
+
+- Integration with VirusTotal API for real-time threat intelligence  
+- WHOIS domain age analysis  
+- Real-time threat intelligence feeds  
+- Browser extension for live URL scanning  
+- Email phishing detection module  
 
 ---
 
 ## Learning Outcomes
 
-This project helped demonstrate:
-
-* Cybersecurity fundamentals
-* Phishing detection concepts
-* Security-focused product design
-* Risk assessment methodologies
-* Dashboard and reporting design
-* Security analytics visualization
+- Understanding phishing attack patterns  
+- Designing rule-based security systems  
+- Implementing risk scoring logic  
+- Building security-focused web interfaces  
+- Creating basic security analytics dashboards  
 
 ---
 
@@ -177,7 +200,6 @@ Name: Manasa D
 
 Education:
 
-* B.Tech Electronics and Communication Engineering
-* M.Tech Cyber Forensics and Information Security
-* MBA Human Resources
-
+- B.Tech Electronics and Communication Engineering  
+- M.Tech Cyber Forensics and Information Security  
+- MBA Human Resources
